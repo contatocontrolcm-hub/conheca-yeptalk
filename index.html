@@ -226,6 +226,18 @@ header{background:#f7f8ffed!important;border-bottom:0!important}
 .hero-photo .bubble,.hero-photo .hero-feet-overlay{display:none!important}
 @media(max-width:960px){.hero-inner{grid-template-columns:1fr;gap:20px;padding:38px 22px 46px}.hero-photo{max-width:540px;margin:auto}}
 @media(max-width:580px){.hero-inner{padding:30px 18px 38px}.hero-photo{width:100%!important}}
+
+/* Desktop viewport fit: keep headline and full approved artwork visible */
+@media(min-width:961px){
+.hero-inner{box-sizing:border-box!important;width:100%!important;max-width:1200px!important;margin-inline:auto!important;padding:28px 32px 36px!important;min-height:0!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)!important;gap:32px!important}
+.hero-inner>div:first-child{min-width:0!important}
+.hero h1{font-size:clamp(38px,3.8vw,54px)!important;line-height:1.06!important;margin:16px 0 18px!important;letter-spacing:-2px!important}
+.hero .lead{font-size:clamp(15px,1.35vw,18px)!important;line-height:1.55!important}
+.hero-photo{height:min(430px,calc(100vh - 225px))!important;max-height:430px!important;min-height:0!important;aspect-ratio:auto!important;align-self:center!important}
+.hero-photo .organic{height:100%!important}
+.hero-photo .organic img{max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+}
+@media(min-width:961px) and (max-height:750px){.hero-inner{padding-top:18px!important;padding-bottom:22px!important}.hero-photo{height:min(390px,calc(100vh - 205px))!important}.hero h1{font-size:clamp(36px,3.5vw,49px)!important}}
 </style></head><body>
 <header><div class="wrap nav"><a href="/" class="logo" aria-label="YepTalk"><img src="/logo-oficial.png" alt="YepTalk" width="118" height="86"  /></a><div class="nav-right"><a href="#metodo" class="nav-link" data-i18n="navMethod">Como funciona</a><a href="#curso" class="nav-link" data-i18n="navCourse">O curso</a><a class="pill trial-link" href="#" data-i18n="trial">Experimentar aula grátis</a><div class="langs"><button id="pt" class="active" aria-label="Português">PT</button><button id="es" aria-label="Español">ES</button></div></div></div></header>
 <main><section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" data-i18n="eyebrow">INGLÊS AMERICANO PARA A VIDA REAL</div><h1 data-i18n-html="headline">Seu inglês.<br><em>Seu ritmo.</em><br>Onde você quiser.</h1><p class="lead" data-i18n="intro">Aprenda inglês americano pelo celular ou computador, com prática de pronúncia, aulas interativas e material de apoio para imprimir.</p><p style="margin-top:28px"><a class="cta trial-link" href="#" data-i18n="trialArrow">Experimentar aula grátis →</a></p><div class="trust" data-i18n="trust">✓ Sem cadastro &nbsp; ✓ Sem cartão &nbsp; ✓ Aula real</div></div><div class="hero-photo"><div class="organic"><img src="/Seu%20ingl%C3%AAs%2C%20seu%20ritmo%20anywhere.png" alt="Mulher aprendendo inglês enquanto caminha em um parque, com destaques de pronúncia, aulas interativas e material de apoio" /></div></div></div></section>
