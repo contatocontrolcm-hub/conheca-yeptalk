@@ -53,6 +53,22 @@ header{background:#fffefef5}
 @media(min-width:1100px){.hero-inner{grid-template-columns: 1fr 1fr}.hero h1{font-size:58px}.hero-photo{margin-left:8px}}
 @media(max-width:960px){.hero-inner{grid-template-columns:1fr;gap:15px}.hero h1{max-width:660px}.hero-photo{width:100%;max-width:570px;margin:auto}.bubble.one{left:1%}.bubble.two,.bubble.three{right:1%}}
 @media(max-width:580px){.nav .logo img{height:55px!important;width:55px!important}.hero-inner{padding-top:34px}.hero h1{font-size:clamp(39px,9vw,50px)}.hero-photo{min-height:345px}.organic{height:340px;width:94%}.bubble{max-width:115px;font-size:10px;padding:8px}.bubble span:first-child{font-size:16px}.bubble.one{top:23%}.bubble.two{top:43%}.bubble.three{bottom:8%}}
+
+/* Rebuild do hero: foto em área própria, direção visual para o texto */
+.hero-inner{max-width:1160px;grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);gap:60px;min-height:585px}
+.hero-inner>div:first-child{position:relative;z-index:2;min-width:0}
+.hero h1{font-size:clamp(40px,4vw,57px);letter-spacing:-2.5px;line-height:1.08;max-width:530px}
+.hero-photo{min-width:0;width:100%;max-width:520px;min-height:485px;justify-self:end;overflow:visible}
+.hero-photo:before{width:90%;height:88%;top:6%;right:1%;transform:rotate(8deg);background:#d4f3ed}
+.organic{width:96%;height:465px;margin-left:auto;border-radius:44% 56% 42% 58% / 30% 32% 68% 70%;transform:none}
+.organic img{transform:scaleX(-1) scale(1.07);object-fit:cover;object-position:center center}
+.bubble{font-size:12px;max-width:150px;line-height:1.35;white-space:normal}
+.bubble.one{top:25%;left:-3%}
+.bubble.two{top:48%;right:-3%}
+.bubble.three{bottom:14%;right:-3%}
+@media(min-width:1100px){.hero-inner{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr)}.hero h1{font-size:57px}}
+@media(max-width:960px){.hero-inner{grid-template-columns:1fr;gap:24px}.hero-photo{justify-self:center;margin:auto}.hero-inner>div:first-child{max-width:680px}}
+@media(max-width:580px){.hero-photo{min-height:350px;max-width:380px}.organic{height:340px}.hero h1{font-size:clamp(38px,9vw,49px)}.bubble{font-size:10px;max-width:110px}.bubble.one{left:0}.bubble.two,.bubble.three{right:0}}
 </style></head><body>
 <header><div class="wrap nav"><a href="/" class="logo" aria-label="YepTalk"><img src="https://yeptalk.pro/favicon.png" alt="YepTalk" style="height:55px;width:55px;object-fit:contain" /></a><div class="nav-right"><a href="#metodo" class="nav-link" data-i18n="navMethod">Como funciona</a><a href="#curso" class="nav-link" data-i18n="navCourse">O curso</a><a class="pill trial-link" href="#" data-i18n="trial">Experimentar aula grátis</a><div class="langs"><button id="pt" class="active" aria-label="Português">PT</button><button id="es" aria-label="Español">ES</button></div></div></div></header>
 <main><section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow" data-i18n="eyebrow">INGLÊS AMERICANO PARA A VIDA REAL</div><h1 data-i18n-html="headline">Seu inglês.<br><em>Seu ritmo.</em><br>Onde você quiser.</h1><p class="lead" data-i18n="intro">Aprenda inglês americano pelo celular ou computador, com prática de pronúncia, aulas interativas e material de apoio para imprimir.</p><p style="margin-top:28px"><a class="cta trial-link" href="#" data-i18n="trialArrow">Experimentar aula grátis →</a></p><div class="trust" data-i18n="trust">✓ Sem cadastro &nbsp; ✓ Sem cartão &nbsp; ✓ Aula real</div></div><div class="hero-photo"><div class="organic"><img src="/yeptalk-estudo-ar-livre.jpg" alt="Jovem caminhando com celular e fones ao ar livre" onerror="this.style.opacity=0"/></div><div class="bubble one"><span>🎙️</span><span data-i18n="bubble1">Pratique a sua pronúncia</span></div><div class="bubble two"><span>📖</span><span data-i18n="bubble2">Aulas interativas</span></div><div class="bubble three"><span>📄</span><span data-i18n="bubble3">Material para imprimir</span></div></div></div></section>
