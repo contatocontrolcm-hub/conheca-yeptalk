@@ -287,6 +287,17 @@ header{background:#f7f8ffed!important;border-bottom:0!important}
 .hero .scene-hero .scene-glow{inset:5% 8%;background:radial-gradient(ellipse,#c9f4ed 0%,#e5ecff 55%,transparent 75%)}
 .hero .scene-hero .scene-note{bottom:7%;right:4%}
 @media(max-width:580px){.hero .hero-inner{padding:44px 20px 55px!important;gap:12px!important}.hero .hero-copy h1{font-size:clamp(36px,9vw,49px)!important}.hero .scene-hero{margin-top:8px!important}.hero .scene-hero img{max-height:none}.hero .scene-hero .scene-note{right:0;bottom:1%}}
+</style><style>
+/* Fotografias de ambiente integradas: recorte óptico sem borda de quadro */
+.desire{position:relative;overflow:hidden;background:linear-gradient(108deg,#e8f8f5 0%,#f4f8ff 55%,#fff 100%)!important}
+.desire::before{content:"";position:absolute;width:680px;height:680px;left:-220px;top:-170px;border-radius:50%;background:radial-gradient(circle,#b8ece7 0%,#d5f2ed 36%,transparent 70%);opacity:.75;pointer-events:none}
+.desire .scene-cafe{width:100%;min-height:440px;display:flex;align-items:center;justify-content:center;isolation:isolate;filter:drop-shadow(0 25px 26px #17105d0b)}
+.desire .scene-cafe::before{content:"";position:absolute;inset:5% -5% 2%;z-index:-1;background:radial-gradient(ellipse at 47% 50%,#c1ece8 0%,#e5efff 50%,transparent 72%);border-radius:50%}
+.desire .scene-cafe img{width:110%;max-width:none!important;max-height:none!important;height:auto!important;object-fit:contain!important;border:0!important;border-radius:0!important;box-shadow:none!important;mask-image:radial-gradient(ellipse 67% 65% at 50% 49%,#000 48%,rgba(0,0,0,.92) 63%,rgba(0,0,0,.4) 78%,transparent 100%)!important;-webkit-mask-image:radial-gradient(ellipse 67% 65% at 50% 49%,#000 48%,rgba(0,0,0,.92) 63%,rgba(0,0,0,.4) 78%,transparent 100%)!important}
+.desire .scene-cafe .scene-glow{display:none}
+.desire .scene-cafe .scene-note{right:0;bottom:3%;background:#fffffff0}
+@media(max-width:960px){.desire .scene-cafe{min-height:0;max-width:760px}.desire .scene-cafe img{width:100%}}
+@media(max-width:580px){.desire .scene-cafe{width:calc(100% + 24px);margin-left:-12px}.desire .scene-cafe img{width:100%;mask-image:radial-gradient(ellipse 72% 68% at 50% 48%,#000 47%,rgba(0,0,0,.88) 63%,transparent 99%)!important;-webkit-mask-image:radial-gradient(ellipse 72% 68% at 50% 48%,#000 47%,rgba(0,0,0,.88) 63%,transparent 99%)!important}}
 </style></head><body>
 <header><div class="wrap nav"><a href="/" class="logo" aria-label="YepTalk"><img src="/logo-oficial.png" alt="YepTalk" width="118" height="86"  /></a><div class="nav-right"><a href="#metodo" class="nav-link" data-i18n="navMethod">Como funciona</a><a href="#curso" class="nav-link" data-i18n="navCourse">O curso</a><a class="pill trial-link" href="#" data-i18n="trial">Experimentar aula grátis</a><div class="langs"><button id="pt" class="active" aria-label="Português">PT</button><button id="es" aria-label="Español">ES</button></div></div></div></header>
 <main>
